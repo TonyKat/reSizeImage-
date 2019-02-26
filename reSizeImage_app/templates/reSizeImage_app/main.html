@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Изменение размеров изображения</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'icon/111.png' %}"/>
+        <link rel="stylesheet" href="{% static 'css/reSizeImage_app.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1>Изменение размеров изображения</h1>
+            <br><a href="{% url 'resize_image_url' %}">Изменить размер</a>
+            <br><a href="{% url 'check_status_url' %}">Проверить статус изменения размера</a>
+        </div>
+    </body>
+</html>

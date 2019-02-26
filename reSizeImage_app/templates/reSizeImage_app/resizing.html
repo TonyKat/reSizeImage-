@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Изменение размера изображения</title>
+    <link rel="stylesheet" href="{% static 'css/reSizeImage_app.css' %}">
+</head>
+<body>
+    <div class="upload_data2">
+        <form method="post" enctype="multipart/form-data" class="up_file">
+            {% csrf_token %}
+            <div>
+                <table>
+                    {{ upload_form.as_table }}
+                </table>
+                <input type="submit" value="Изменить">
+            </div>
+            <div>
+                Идентификатор задачи: {{ task_id}}
+            </div>
+        </form>
+    </div>
+    <h1><a href="{% url 'main_menu_url' %}">Переход в главное меню...</a></h1>
+</body>
+</html>
