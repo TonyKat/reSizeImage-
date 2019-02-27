@@ -5,7 +5,7 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^/$', views.main_menu, name='main_menu_url'),
+    url(r'^$', views.main_menu, name='main_menu_url'),
     url(r'^resize_image/$', views.resizing_image, name='resize_image_url'),
     url(r'^check_status/$', views.check_status_view, name='check_status_url'),
 ]
